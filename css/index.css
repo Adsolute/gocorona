@@ -1,5 +1,11 @@
 /* ! @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700,800&display=swap); */
 /* ------------------------------------------Обнуление------------------------------------- */
+
+/* -------------------------------Языки------------------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap);
+/* -------------------------------Языки------------------------------------------ */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -39,6 +45,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	font-size: 100%;
+	/* font-family: rubik; */
 }
 
 body {
@@ -48,6 +55,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	/* font-family: rubik; */
 }
 
 input,
@@ -72,7 +80,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
-	color: #000;
+	/* color: #000; */
 }
 
 a:hover {
@@ -99,11 +107,9 @@ h6 {
 
 /* ------------------------------------------Обнуление------------------------------------- */
 
-/* -------------------------------Языки------------------------------------------ */
-@import url(https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap);
-/* -------------------------------Языки------------------------------------------ */
-
+body {
+	font-family: Rubik;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -118,14 +124,20 @@ h6 {
 	width: 100%;
 }
 
-body {
-	font-family: Rubik;
-	color: #000;
-}
+/* ----------------------------------------HEADER--------------------------------- */
 
 .header {
+	/* position: fixed; */
+	top: 0;
+	left: 0;
+	z-index: 50;
+	/* position: relative; */
 }
 .header__container {
+	/* position: fixed; */
+	width: 100%;
+	left: 0px;
+	top: 0px;
 	padding: 0px 15px;
 	display: flex;
 	align-items: center;
@@ -149,8 +161,10 @@ body {
 	font-weight: 700;
 	font-size: 10px;
 	line-height: 12px;
+	/* color: black; */
 }
 .menu__link {
+	/* color: black; */
 }
 .header__button {
 	display: flex;
@@ -158,6 +172,7 @@ body {
 	justify-content: flex-end;
 }
 .button {
+	color: #fcfdfe;
 	display: inline-block;
 	font-family: Raleway;
 	font-size: 10px;
@@ -166,10 +181,21 @@ body {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 14px 30px;
-	color: #fcfdfe;
 	background-color: #ec5863;
 	border-radius: 5px;
 }
 .button__blue {
 	background-color: #4285f4;
 }
+/* ----------------------------------------HEADER--------------------------------- */
+
+/* -------------------------------------------MAIN------------------------------------ */
+
+/* -------------------------------------------MAIN------------------------------------ */
+
+/* -------------------------------------------FOOTER------------------------------------ */
+footer {
+	flex: 0 1 auto;
+}
+
+/* -------------------------------------------FOOTER------------------------------------ */
